@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <samplemodel_adminhtml_samplemodelbackend_index>
+	<reference name="content">
+	  <block type="samplemodel/adminhtml_samplemodelbackend" name="samplemodelbackend" template="samplemodel/samplemodelbackend.phtml"/>
+	</reference>
+  </samplemodel_adminhtml_samplemodelbackend_index>
+</layout>

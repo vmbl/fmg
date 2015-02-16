@@ -1,0 +1,12 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <samplemodel_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="samplemodel/index" name="samplemodel_index" template="samplemodel/index.phtml"/>   
+    </reference>   
+  </samplemodel_index_index>   
+</layout>   
+	

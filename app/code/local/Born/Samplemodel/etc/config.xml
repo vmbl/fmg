@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Born_Samplemodel>
+      <version>0.1.0</version>
+    </Born_Samplemodel>
+  </modules>
+  <frontend>
+    <routers>
+      <samplemodel>
+        <use>standard</use>
+          <args>
+            <module>Born_Samplemodel</module>
+            <frontName>samplemodel</frontName>
+          </args>
+      </samplemodel>
+    </routers>
+		<layout>
+		  <updates>
+			<samplemodel>
+			  <file>samplemodel.xml</file>
+			</samplemodel>
+		  </updates>
+		</layout>
+  </frontend>
+  <global>
+    <helpers>
+      <samplemodel>
+        <class>Born_Samplemodel_Helper</class>
+      </samplemodel>
+    </helpers>
+	<blocks>
+	  <samplemodel>
+		<class>Born_Samplemodel_Block</class>
+	  </samplemodel>
+	</blocks>
+  </global>
+  <admin>
+	<routers>
+	  <samplemodel>
+	    <use>admin</use>
+		<args>
+		  <module>Born_Samplemodel</module>
+		  <frontName>admin_samplemodel</frontName>
+		</args>
+	  </samplemodel>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <samplemodel module="samplemodel">
+		<title>Samplemodel</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <samplemodelbackend module="samplemodel">
+			<title>Sample Page</title>
+			<sort_order>0</sort_order>
+			<action>admin_samplemodel/adminhtml_samplemodelbackend</action>
+		  </samplemodelbackend>
+		</children>
+	  </samplemodel>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<samplemodel translate="title" module="samplemodel">
+			  <title>Samplemodel</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <samplemodelbackend translate="title">
+			<title>Sample Page</title>
+		  </samplemodelbackend>
+			  </children>
+			</samplemodel>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<samplemodel>
+		  <file>samplemodel.xml</file>
+		</samplemodel>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 
