@@ -15,7 +15,7 @@
     },
     "extra":{
 	"map":[
-		["app/etc/modules/Aligent_GeoIP.xml", "app/etc/modules/Born_Samplemodel.xml"],
+		["app/etc/modules/Born_Samplemodel.xml", "app/etc/modules/Born_Samplemodel.xml"],
 		["app/code/local/Born/Samplemodel", "app/code/local/Born/Samplemodel"],
 		["app/design/frontend/base/default/layout/samplemodel.xml", "app/design/frontend/base/default/layout/samplemodel.xml"],
 		["app/design/frontend/base/default/template/samplemodel", "app/design/frontend/base/default/template/samplemodel"],
