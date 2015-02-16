@@ -1,5 +1,5 @@
 {
-    "name": "born/samplemodel",
+    "name": "vmbl/fmg",
     "description": "Official Magento Plugin to connect to geoip Service Provider Adyen'.",
     "type": "magento-module",
     "homepage": "https://github.com/adyenpayments/magento",
